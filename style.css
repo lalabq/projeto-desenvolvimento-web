@@ -14,6 +14,52 @@ body {
   margin: 0;
 }
 
+/* Botão */
+button {
+  background: var(--rosa-escuro);
+  padding: 0;
+  border: 1px solid #000;
+  border-radius: .5rem;
+  box-shadow: 5px 5px 0px 0px #000;
+  transition: .3s;
+}
+button:hover {
+  background: var(--amarelo);
+}
+button a {
+  display:inline-block;
+  text-decoration: none;
+  padding: .5rem 1.2rem;
+  color: #000;
+}
+
+/* Hr */
+hr {
+  border: none;
+  height: 10px;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 10"><path d="M0,5 Q10,10 20,5 T40,5 T60,5 T80,5 T100,5 T120,5" fill="transparent" stroke="black" stroke-width="2"/></svg>');
+  background-repeat: repeat-x;
+}
+
+/* Table */
+table {
+  border-spacing: 0;
+  border: 1px solid #000;
+  border-radius: .5rem;
+}
+table thead {
+  background: var(--rosa-escuro);
+}
+table thead th:first-child {
+  border-top-left-radius: .5rem;
+}
+table thead th:last-child {
+  border-top-right-radius: .5rem;
+}
+table thead th, table td {
+  padding: .5rem 1.5rem;
+}
+
 /* Logo */
 .logo {
   font-family: "Yeseva One";
@@ -58,33 +104,6 @@ header nav a {
 }
 header nav a:hover {
   text-decoration: underline;
-}
-
-/* Hr */
-hr {
-  border: none;
-  height: 10px;
-  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 10"><path d="M0,5 Q10,10 20,5 T40,5 T60,5 T80,5 T100,5 T120,5" fill="transparent" stroke="black" stroke-width="2"/></svg>');
-  background-repeat: repeat-x;
-}
-
-/* Botão */
-button {
-  background: var(--rosa-escuro);
-  padding: 0;
-  border: 1px solid #000;
-  border-radius: .5rem;
-  box-shadow: 5px 5px 0px 0px #000;
-  transition: .3s;
-}
-button:hover {
-  background: var(--amarelo);
-}
-button a {
-  display:inline-block;
-  text-decoration: none;
-  padding: .5rem 1.2rem;
-  color: #000;
 }
 
 /* Home */
@@ -140,4 +159,11 @@ button a {
 }
 #gallery .content > div > img, #gallery .content > div > span {
   flex: 1;
+}
+
+.our-products {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
