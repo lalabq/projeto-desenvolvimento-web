@@ -84,15 +84,6 @@ table thead th, table td {
   color: #000;
 }
 
-img {
-  height: 300px;
-  width: 300px;
-  max-width: 300px;
-  max-height: 300px;
-  object-fit: cover;
-  border-radius: 100%;
-}
-
 /* Header */
 header {
   display: flex;
@@ -145,6 +136,7 @@ header nav a:hover {
   margin: auto 0;
   text-align: center;
   width: 100vw;
+  position: relative;
 }
 .not-found h1 {
   font-size: 5rem;
@@ -155,6 +147,12 @@ header nav a:hover {
 }
 .not-found button {
   margin-top: 2rem;
+}
+.not-found img {
+  position: absolute;
+  top: 0;
+  right: 60vw;
+  z-index: -1;
 }
 
 /* Gallery */
@@ -177,6 +175,14 @@ header nav a:hover {
 }
 #gallery .content > div > img, #gallery .content > div > span {
   flex: 1;
+}
+#gallery img {
+  height: 300px;
+  width: 300px;
+  max-width: 300px;
+  max-height: 300px;
+  object-fit: cover;
+  border-radius: 100%;
 }
 
 .our-products {
