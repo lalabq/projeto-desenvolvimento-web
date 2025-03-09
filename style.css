@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Mega:wght@100..900&family=Lexend:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Yeseva+One&display=swap');
+
+:root {
+  --rosa-claro: #FFDFD2;
+  --rosa-escuro: #FFAFAF;
+  --amarelo: #FECF19;
+}
+* {
+  font-family: "Lexend Mega";
+  font-weight: 500;
+}
+body {
+  background: var(--rosa-claro);
+  margin: 0;
+}
+
+/* Logo */
+.logo {
+  font-family: "Yeseva One";
+  font-size: 4rem;
+}
+
+img {
+  height: 300px;
+  width: 300px;
+  max-width: 300px;
+  max-height: 300px;
+  object-fit: cover;
+  border-radius: 100%;
+}
+
+/* Header */
+header {
+  display: flex;
+  flex-direction: row;
+  max-width: 1000px;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 0;
+}
+header nav ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  padding: 1rem 2rem;
+  border-radius: .5rem;
+  border: 1px solid #000;
+  box-shadow: 10px 10px 0px 0px #000;
+  width: max-content;
+  background: var(--amarelo);
+  margin: 0;
+}
+header nav a {
+  text-decoration: none;
+  color: #000;
+}
+header nav a:hover {
+  text-decoration: underline;
+}
+
+/* Hr */
+hr {
+  border: none;
+  height: 10px;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 10"><path d="M0,5 Q10,10 20,5 T40,5 T60,5 T80,5 T100,5 T120,5" fill="transparent" stroke="black" stroke-width="2"/></svg>');
+  background-repeat: repeat-x;
+}
+
+/* Botão */
+button {
+  background: var(--rosa-escuro);
+  padding: 0;
+  border: 1px solid #000;
+  border-radius: .5rem;
+  box-shadow: 5px 5px 0px 0px #000;
+  transition: .3s;
+}
+button:hover {
+  background: var(--amarelo);
+}
+button a {
+  display:inline-block;
+  text-decoration: none;
+  padding: .5rem 1.2rem;
+  color: #000;
+}
+
+/* Home */
+.home {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+}
+.home button {
+  margin: 0 auto;
+}
+
+/* Not found */
+.not-found {
+  display: flex;
+  text-align: center;
+  width: 100vw;
+  height: 100vh;
+}
+.not-found .content {
+  margin: auto 0;
+  text-align: center;
+  width: 100vw;
+}
+.not-found h1 {
+  font-size: 5rem;
+}
+.not-found h2 {
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+.not-found button {
+  margin-top: 2rem;
+}
+
+/* Gallery */
+#gallery {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#gallery .content {
+  display: flex;
+  flex-direction: column;
+  max-width: 1000px;
+  margin: 1rem 0 5rem 0;
+}
+#gallery .content > div {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+#gallery .content > div > img, #gallery .content > div > span {
+  flex: 1;
+}
