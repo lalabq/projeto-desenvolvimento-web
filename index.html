@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Home</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
   <header>
@@ -19,19 +19,19 @@
   </header>
   <hr>
   <main class="home">
-    <div class="panel">
+    <section class="panel">
       <h2>PREMIUM LOW - CALORIE SOFT DRINKS</h2>
       <p>MIXED WITH FEEL GOOD FLAVOURS, ALL NATURAL INGREDIENTS, AND A SPLASH OF VITAMIN D - TO HELP YOU CATCH THE SUN ALL YEAR ROUND. THIS IS LIQUID SUNSHINE.</p>
       <button><a href="#gallery">Discover more</a></button>
       <p>Get FREE delivery over $40 with code 'FREE40'. Find nearby retailers.</p>
-    </div>
+    </section>
     <hr>
-    <div id="gallery">
+    <section id="gallery">
       <h1>Gallery</h1>
       <div class="content">
         <div>
           <img
-            src="https://www.punchydrinks.com/cdn/shop/files/Variety_1_2dcc93fa-58d2-471a-9202-3efcf37c7e1a.jpg?v=1725986607"
+            src="assets/images/flavours.jpg"
             alt="Latas de refrigerante Punchy"
             title="Latas de refrigerante Punchy"
           >
@@ -39,29 +39,34 @@
         </div>
         <div>
           <span>Indulge in our premium sodas, crafted for sipping or mixing, and made with a refreshing blend of high-quality ingredients. Each bottle contains a splash of vitamin D, helping you soak up the sunshine no matter the season. Whether you're enjoying a solo moment of refreshment or enhancing your favorite cocktails, our sodas bring a burst of crisp, invigorating flavor to every sip. Stay energized, stay vibrant, and enjoy the taste of sunshine all year round.</span>
-          <img
-            src="https://www.punchydrinks.com/cdn/shop/files/1_8108ec90-bfca-46a3-bf56-a56865bed255.png?v=1725987318"
-            alt="Lata de refrigerante Punchy sabor gengibre e chai"
-            title="Lata de refrigerante Punchy sabor gengibre e chai"
-          >
+          <figure>
+            <img
+              src="assets/images/ginger-and-chai.png"
+              alt="Lata de refrigerante Punchy sabor gengibre e chai"
+              title="Lata de refrigerante Punchy sabor gengibre e chai"
+            >
+            <figcaption>Best seller</figcaption>
+          </figure>
         </div>
         <div>
           <img
-            src="https://www.punchydrinks.com/cdn/shop/files/1_5cb19eaa-afc0-46b2-b06a-2074bf83c9f1.png?v=1696500728"
+            src="assets/images/bag.png"
             alt="Bolsa Punchy"
             title="Bolsa Punchy"
           >
           <span>Reusable and eco-friendly tote bag, typically made from sustainable materials like cotton, jute, canvas, or recycled fabrics. It is designed to replace single-use plastic bags, helping to reduce environmental waste. Eco bags come in various sizes and designs, often featuring sturdy handles for easy carrying and a spacious interior for groceries, books, or everyday essentials. Some models also include additional compartments or foldable designs for convenience. They are commonly used for shopping, commuting, or as a stylish and practical accessory.</span>
         </div>
       </div>
-    </div>
+    </section>
     <hr>
-    <div class="subscribe">
+    <section class="subscribe">
       <p>Sign Up to Soak Up 20% Off</p>
       <p>AND DON'T MISS A DROP OF OUR NEW ARRIVALS AND LATEST OFFERS.</p>
-      <input type="text" placeholder="Enter your email here" name="email" />
-      <button onclick="alert('Subscribed!')">Subscribe</button>
-    </div>
+      <form action="#">
+        <input type="text" placeholder="Enter your email here" name="email" />
+        <button onclick="alert('Subscribed!')">Subscribe</button>
+      </form>
+    </section>
     <hr>
     <button><a href="https://www.behance.net/gallery/197119263/Landing-page-for-healthy-beverages-brand" target="_blank">Confira a inspiração do layout</a></button>
   </main>

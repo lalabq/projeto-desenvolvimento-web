@@ -184,9 +184,24 @@ header nav a:hover {
   object-fit: cover;
   border-radius: 100%;
 }
+#gallery figure {
+  margin: 0;
+  position: relative;
+}
+#gallery figcaption {
+  position: absolute;
+  bottom: 0;
+  background: var(--amarelo);
+  padding: .3rem 0;
+  border-radius: 1rem;
+  border: 5px dotted var(--roxo);
+  width: 100%;
+  text-align: center;
+}
 
 .our-products {
   margin-bottom: 2rem !important;
+  gap: 3rem;
 }
 .our-products, .panel {
   margin: 0 auto;
